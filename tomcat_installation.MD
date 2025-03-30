@@ -35,6 +35,9 @@ access tomcat application from browser on port 8080
 tomcatdown
 tomcatup
 ```
+
+Refer this Video -- https://www.youtube.com/watch?v=cukABJi3ce4
+
 #### Check point :
 Access tomcat application from browser on port 8090  
  - http://<Public_IP>:8090
