@@ -78,3 +78,21 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 1. Build job
 1. Check "console output"
 
+### INSTALLATION PROCESS-- FIXED ---------------------
+
+Amazon Linux Server -- Jenkins Installation process
+--------------------------------------------------
+sudo dnf install java-17-amazon-corretto-devel
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+sudo yum upgrade
+# Add required dependencies for the jenkins package
+sudo yum install fontconfig java-17-openjdk
+sudo yum install jenkins
+sudo systemctl daemon-reload
+sudo systemctl enable Jenkins
+sudo systemctl start jenkins
+
+
+
